@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+<body>
+
+    <div class="container">
+        
+        <p>This is Ranvir Singh</p>
+        <p>This is Ranvir Singh</p>
+        <p>This is Ranvir Singh</p>
+        
+        <p class="mypara">This is Ranvir Singh from ranvirsingh.info</p>
+        
+    </div>
+
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="rvreversetext.js" type="text/javascript"></script>
+<script type="text/javascript">
+    
+    $('.container p:first').rvReverseText({minlength:0, maxlength:30});
+//    $('.container p').rvReverseText({minlength:0, maxlength:30});
+    
+    $(document).on('click', '.mypara', function (){
+        $(this).rvReverseText();
+    });
+    
+</script>
+    
+</body>
+</html>
